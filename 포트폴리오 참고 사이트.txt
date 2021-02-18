@@ -1,0 +1,21 @@
+https://docs.google.com/spreadsheets/d/19O0-fyPQnrKU9Nm7E9v-UYmYTpjkosskc_6jcvr4f0Q/edit#gid=0 (선생님 게시판같은거)
+
+https://preview.erilisdesign.com/html/petri/portfolio.html
+
+폰트 구글폰트 
+
+영어 Montserrat
+                  
+한글 청소년체 
+
+@font-face {
+font-family: 'Youth';
+font-style: normal;
+font-weight: 400;
+src: url('//cdn.jsdelivr.net/korean-webfonts/1/orgs/othrs/kywa/Youth/Youth.woff2') format('woff2'),
+url('//cdn.jsdelivr.net/korean-webfonts/1/orgs/othrs/kywa/Youth/Youth.woff') format('woff');
+}
+
+.youth * {
+font-family: 'Youth', sans-serif;
+}
