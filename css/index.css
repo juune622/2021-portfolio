@@ -3,8 +3,12 @@ width: 80%;
 height: 100px;
 background-color: rgba(0,0,0,0.4);
 padding: 0.5em;
-font-size: 2.5em;position: fixed;right: 100px;top: 0;
+font-size: 3em;position: fixed;right: 100px;top: 0;
+display: flex;justify-content: space-between;align-items: center;
 }
+header h1{color: #fff;}
+header .bars{}
+header .bars div{width: 30px;height: 10px;border-bottom: 2px solid#fff;margin-bottom: 1em 0;}
 .contents{width: 100%;height: 100vh;
 background-image: url(../img/wolf.jpg);
 background-position: top center;
