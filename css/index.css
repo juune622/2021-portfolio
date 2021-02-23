@@ -1,0 +1,42 @@
+header{
+width: 80%;
+height: 100px;
+background-color: rgba(0,0,0,0.4);
+padding: 0.5em;
+font-size: 2.5em;position: fixed;right: 100px;top: 0;
+}
+.contents{width: 100%;height: 100vh;
+background-image: url(../img/wolf.jpg);
+background-position: top center;
+background-size: cover;
+overflow: hidden;
+}
+.contents .sns{
+width: 100px;
+height: 30%;
+position: fixed;
+left: 0;bottom: 100px;
+background-color: rgba(0,0,0,0.4);
+text-align: center;
+flex-direction: column;
+display: flex;
+padding: 2em 0;
+}
+.contents .sns .fa{font-size: 2em;color: #fff;margin-bottom: 1em;}
+.contents .sidebg{
+    width: 100px;height: 100%;
+    position: fixed;
+    right: 0;
+    bottom: 100px;
+    background-color: rgba(0,0,0,0.4);
+}
+footer{
+width: 100%;
+height: 100px;
+background-color:rgba(0,0,0,0.4);
+position: fixed;bottom: 0;left: 0;
+}
+footer .copy{
+color: #fff;
+position: fixed;right: 20px;bottom: 20px;
+}
