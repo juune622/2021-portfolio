@@ -1,3 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,500&display=swap');
+
+/* font-family: 'Montserrat', sans-serif; */
+
+.wrapper{
+    width: 20%; margin: 0 auto;
+}
+
 header{
 width: 80%;
 height: 100px;
@@ -7,14 +15,30 @@ font-size: 3em;position: fixed;right: 100px;top: 0;
 display: flex;justify-content: space-between;align-items: center;
 }
 header h1{color: #fff;}
-header .bars{}
+header .bars{cursor: pointer;}
 header .bars div{width: 30px;height: 10px;border-bottom: 2px solid#fff;margin-bottom: 1em 0;}
 .contents{width: 100%;height: 100vh;
 background-image: url(../img/wolf.jpg);
 background-position: top center;
 background-size: cover;
 overflow: hidden;
+display: flex;
+justify-content: center;
+align-items: center;
 }
+.contents .main{
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #Fff;
+    font-family: 'Montserrat', sans-serif;
+    flex-wrap: wrap;
+}
+.contents .main div{margin-bottom: 0.25em;width: 100%;}
+.contents .main .front{font-size: 3em;}
+.contents .main .dev{font-size: 3em;text-align: right;}
+.contents .main .name{font-size: 2em;text-align: center;}
 .contents .sns{
 width: 100px;
 height: 30%;
