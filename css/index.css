@@ -110,7 +110,6 @@ padding: 2em;
 display: flex;
 flex-direction: column;
 align-items: center;
-opacity: 50%;
 }
 
 .contents .sns .sns-wrap .fa{font-size: 2em;
@@ -118,7 +117,7 @@ opacity: 50%;
     margin-bottom: 1em;
     cursor: pointer;
 }
-.contents >.sns>.sns-wrap>i.fa-github:hover{opacity: 100%;}
+.contents >.sns>.sns-wrap>i.fa-github:hover{opacity: 50%;}
 .contents .sidebg{
     width: 100px;height: 100%;
     position: fixed;
