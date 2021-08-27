@@ -68,7 +68,7 @@ padding: 0.5em;
 font-size: 3em;position: fixed;right: 100px;top: 0;
 display: flex;justify-content: space-between;align-items: center;
 font-family: 'Montserrat', sans-serif;
-z-index: 11;
+z-index: 15;
 }
 header h1{color: #fff;}
 header .bars{cursor: pointer;}
@@ -80,8 +80,15 @@ header .bars div{width: 30px;height: 10px;border-bottom: 2px solid#fff;margin-bo
     display: flex;
     justify-content: center;
     padding: 15%;
+    
     /* align-items: center; */
 }
+.sidebar{width: 50%;height: 100vh;background-color: #fff;
+    position: fixed;
+    z-index: 13;
+    left: 100%;
+    transition: .5s;}
+.bgCover{position: fixed;width: 100%;height: 100vh;background-color: rgba(0,0,0,0.4);transition:width 2s, height 2s, background-color 2s;z-index: 12;display: none;}
 .contents::before{
     content: "";
     background-image: url(../img/joshua-reddekopp-SyYmXSDnJ54-unsplash.jpg);
@@ -118,8 +125,8 @@ header .bars div{width: 30px;height: 10px;border-bottom: 2px solid#fff;margin-bo
     line-height: 44px;
     font-family: 'Montserrat', sans-serif;
 }
-.contents .main .btn-wrapper a.more{background-color: #fff;color: black;width: 110px;}
-.contents .main .btn-wrapper a.portfolio{margin-left: 1em;transition: all 0.3s;width: 110px;}
+.contents .main .btn-wrapper a.more{background-color: #fff;color: black;width: 110px;cursor: pointer;}
+.contents .main .btn-wrapper a.portfolio{margin-left: 1em;transition: all 0.3s;width: 110px;cursor: pointer;}
 .contents .main .btn-wrapper a.portfolio:hover{background-color: #fff;color: black;}
 .contents .sns{
 width: 100px;
