@@ -7,4 +7,10 @@ $(".popup-wrapper .home").click(function(){
 $(".more").click(function(){
     $(".sidebar").css("left","50%")
     $(".bgCover").show("slow")
+    $(".close").css("top","0")
+})
+$(".close").click(function(){
+    $(".sidebar").css("left","100%")
+    $(".bgCover").hide("slow")
+    $(".close").css("top","-100px")
 })
