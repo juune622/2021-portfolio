@@ -1,24 +1,34 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700&display=swap');
 
 /* font-family: 'Montserrat', sans-serif; */
 a,a:hover{text-decoration: none;color: inherit;}
 
 
-.wrapper{
+/* .wrapper{
     width: 20%; margin: 0 auto;
+} */
+.popup.open{
+visibility: visible;
+opacity: 1;
+transition: .5s;
 }
 .popup{
     font-family: 'Montserrat', sans-serif;
-    display: none;
-}
-.popup .popup-wrapper{width: 100%;
-    height: 100%;
-    position: fixed;
-    background-color: rgba(0,0,0,0.7);
+    visibility: hidden;
+    opacity: 0;
     z-index: 10;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.7);
     display: flex;
     align-items: center;
-    justify-content: center;}
+    justify-content: center;
+}
+.popup .popup-wrapper{
+    }
 .popup .popup-wrapper ul{
     display: flex;
     flex-direction: column;
@@ -66,27 +76,39 @@ header .bars div{width: 30px;height: 10px;border-bottom: 2px solid#fff;margin-bo
 .contents{
     width: 100%;
     height: 100vh;
-    background-image: url(../img/wolf.jpg);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    padding: 15%;
+    /* align-items: center; */
+}
+.contents::before{
+    content: "";
+    background-image: url(../img/joshua-reddekopp-SyYmXSDnJ54-unsplash.jpg);
     background-position: top center;
     background-size: cover;
     overflow: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+    opacity: 0.9;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;}
 .contents .main{
     position: fixed;
     display: flex;
     flex-direction: column;
-    align-items: center;
     color: #Fff;
-    font-family: 'Montserrat', sans-serif;
-    flex-wrap: wrap;
+    font-family: 'Noto Sans KR', sans-serif;
+    width: 60%;
 }
-.contents .main div{margin-bottom: 0.25em;width: 100%;}
-.contents .main .front{font-size: 3em;}
-.contents .main .dev{font-size: 3em;text-align: right;}
-.contents .main .name{font-size: 2em;text-align: center;}
+.contents .main-wrap{display: flex;margin-bottom: 2em;}
+.contents .main div{width: 100%;}
+.contents .main .front{font-size: 2.5em;text-align: right;line-height: 0.6;}
+.contents .main .front i.col{padding: 0.1em;color: cyan;font-size: 0.8em;}
+.contents .main .front i.name{font-weight: lighter;font-size: 0.5em;}
+.contents .main .dev{font-size: 5em;text-align: left;line-height: 0.59;}
+/* .contents .main .name{font-size: 2em;text-align: center;} */
 .contents .main .btn-wrapper{margin-top: 1em;display: flex;justify-content: center;}
 .contents .main .btn-wrapper a{
     display: block;
@@ -96,8 +118,8 @@ header .bars div{width: 30px;height: 10px;border-bottom: 2px solid#fff;margin-bo
     line-height: 44px;
     font-family: 'Montserrat', sans-serif;
 }
-.contents .main .btn-wrapper a.more{background-color: #fff;color: black;}
-.contents .main .btn-wrapper a.portfolio{margin-left: 1em;transition: all 0.3s;}
+.contents .main .btn-wrapper a.more{background-color: #fff;color: black;width: 110px;}
+.contents .main .btn-wrapper a.portfolio{margin-left: 1em;transition: all 0.3s;width: 110px;}
 .contents .main .btn-wrapper a.portfolio:hover{background-color: #fff;color: black;}
 .contents .sns{
 width: 100px;
