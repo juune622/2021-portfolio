@@ -14,3 +14,14 @@ $(".close").click(function(){
     $(".bgCover").hide("slow")
     $(".close").css("top","-100px")
 })
+$(".popup .popup-wrapper ul li").eq(0).siblings().click(function(){
+    $(".sidebar").css("left","50%")
+    $(".bgCover").show("slow")
+    $(".close").css("top","0")
+    $(".popup").removeClass("open")
+})
+$(".contents .main .btn-wrapper a.portfolio").click(function(){
+    $(".sidebar").css("left","50%")
+    $(".bgCover").show("slow")
+    $(".close").css("top","0")
+})
