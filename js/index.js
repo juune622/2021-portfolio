@@ -25,3 +25,4 @@ $(".contents .main .btn-wrapper a.portfolio").click(function(){
     $(".bgCover").show("slow")
     $(".close").css("top","0")
 })
+
