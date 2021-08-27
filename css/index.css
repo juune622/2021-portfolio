@@ -90,7 +90,9 @@ header .close .close-wrap{font-size: 1em;}
     position: fixed;
     z-index: 13;
     left: 100%;
-    transition: .5s;}
+    transition: .5s;
+    padding-top: 100px;
+}
 .bgCover{position: fixed;width: 100%;height: 100vh;background-color: rgba(0,0,0,0.4);transition:width 2s, height 2s, background-color 2s;z-index: 12;display: none;}
 .contents::before{
     content: "";
