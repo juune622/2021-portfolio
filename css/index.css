@@ -4,15 +4,21 @@
 
 /* font-family: 'Montserrat', sans-serif; */
 html{scroll-behavior: smooth;}
+body{user-select: none;}
 
 a,
 a:hover {
     text-decoration: none;
     color: inherit;
 }
+.mx100{
+    max-width: 100%;
+}
 
 .container {
-    padding: 0 2.2em;
+    padding: 0 5em;
+    display: flex;
+    flex-direction: column;
 }
 
 .container h2 {
@@ -23,7 +29,10 @@ a:hover {
 
 .container p {
     font-family: 'Noto Sans KR', sans-serif;
+    
 }
+.container .wid{width: 100%;display: flex;margin-bottom: 1em;}
+.container .wid div{width: 70px;height: 70px;margin-right: 1em;margin-bottom: 1em;}
 
 .popup.open {
     visibility: visible;
@@ -180,6 +189,18 @@ header .close .close-wrap {
 .sidebar section {
     padding: 100px 0;
 }
+.sidebar section p{
+    line-height: 2;
+}
+.sidebar #contact .container>p{
+    margin-bottom: 2em;
+}
+.sidebar #contact .container .con-wrap{
+    width: 100%;
+    display: flex;
+}
+.sidebar #contact .container .con-wrap .conicon i{font-size: 3em;}
+.sidebar #contact .container .con-wrap div{width: 33%;}
 
 .bgCover {
     position: fixed;
