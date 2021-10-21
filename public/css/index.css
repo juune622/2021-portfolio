@@ -31,7 +31,8 @@ a:hover {
     font-family: 'Noto Sans KR', sans-serif;
     
 }
-.container .wid{width: 100%;display: flex;margin-bottom: 1em;}
+
+.container .wid{width: 100%;display: flex;margin-bottom: 1em;flex-wrap: wrap;}
 .container .wid div{width: 70px;height: 70px;margin-right: 1em;margin-bottom: 1em;}
 
 .popup.open {
@@ -199,6 +200,7 @@ header .close .close-wrap {
     width: 100%;
     display: flex;
 }
+
 .sidebar #contact .container .con-wrap .conicon i{font-size: 3em;}
 .sidebar #contact .container .con-wrap div{width: 33%;}
 
@@ -343,16 +345,16 @@ header .close .close-wrap {
     opacity: 100%;
 }
 
-.contensCopy{
+.contentCopy{
     text-align: center;
     display: none;
 }
-.contensCopy .copy-wrap{
+.contentCopy .copy-wrap{
     margin-bottom: 1.5em;
     font-size: 1.5em;
 }
-.contensCopy .copy-wrap .fa-instagram{margin: 0 .5em;}
-.contensCopy p{font-size: 0.8em;}
+.contentCopy .copy-wrap .fa-instagram{margin: 0 .5em;}
+.contentCopy p{font-size: 0.8em;}
 .contents .sidebg {
     width: 100px;
     height: 100%;
@@ -402,7 +404,7 @@ footer .copy {
     }
     .bgCover{position: static;}
     .main-wrap{position: static;}
-    .contensCopy{display: block;}
+    .contentCopy{display: block;}
 }
 
 @media screen and (max-width:991px) {
@@ -417,4 +419,16 @@ footer .copy {
 }
 
 @media screen and (max-width:575px) {
+    .sidebar{
+        padding-top: 0;
+    }
+    
+    .container .wid div{width: 50px;height: 50px;}
+
+    .sidebar #contact>.container >p{font-size: 0.8em;}
+    .sidebar #contact .container .con-wrap{flex-direction: column;}
+    .sidebar #contact .container .con-wrap .conicon{display: flex;width: 100%;margin-bottom: 1em;}
+    .sidebar #contact .container .con-wrap .conicon i{font-size: 2em;}
+    .sidebar #contact .container .con-wrap .conicon i.fa-mobile{font-size: 3em;}
+    .sidebar #contact .container .con-wrap .conicon p{font-size: 0.8em;}
 }
