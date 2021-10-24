@@ -318,7 +318,7 @@ header .close .close-wrap {
 /* portfolio */
 
 .port-wrapper{width: 100%;display: flex;justify-content: space-between;flex-wrap: wrap;}
-.port-wrapper .port-wrap{width: 48%;background-position: center;background-repeat: no-repeat;background-size: cover;max-height: 100%;position: relative;}
+.port-wrapper .port-wrap{width: 48%;background-position: center;background-repeat: no-repeat;background-size: cover;max-height: 100%;position: relative;border-radius: 10px;overflow: hidden;}
 .port-wrapper .port-wrap a.port-cover{visibility: hidden; width: 100%;height: 400px;background-color: rgba(0,0,0,0.7);z-index: 9;padding: 17%;color: #f9f9f9;display: flex;flex-direction: column;justify-content: space-between;}
 .port-wrapper .port-wrap:hover a.port-cover{visibility: visible;}
 .port-wrapper .port-wrap a::after{position: absolute; content: "";border:1px solid#f9f9f9;width: 80%;height: 80%;left: 10%;top: 10%;}
